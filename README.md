@@ -1,0 +1,2 @@
+# Introduction
+A classic (Conway's game of life)[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life] implemented with Typescript and HTML. Seeded with random cells produces a new generation every 200ms. The interval and the grid size are configurable.

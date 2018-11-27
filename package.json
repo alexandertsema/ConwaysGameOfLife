@@ -1,0 +1,9 @@
+{
+  "description": "Conway's game of life",
+  "main": "main.js",
+  "author": "Alex T",
+  "dependencies": {},
+  "scripts": {
+    "dev": "tsc --target ES2016 main.ts --watch"
+  }
+}

@@ -1,0 +1,48 @@
+body {
+  margin: 1rem;
+}
+
+#grid {
+  width: 100%;
+}
+
+.cell {
+  padding: 0.4rem;
+  border-radius: 100%;
+}
+
+.alive {
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-name: birth;
+  animation-fill-mode: forwards;
+}
+
+.dead {
+  animation-duration: 0.4s;
+  animation-name: death;
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes birth {
+  from {
+    background-color: none;
+    box-shadow: none;
+  }
+  to {
+    background-color: rgb(39, 247, 150);
+    box-shadow: 0 0 10px 5px rgb(39, 247, 150);
+  }
+}
+
+@keyframes death {
+  from {
+    background-color: rgb(39, 247, 150);
+    box-shadow: 0 0 10px 5px rgb(39, 247, 150);
+  }
+  to {
+    background-color: none;
+    box-shadow: none;
+  }
+}
